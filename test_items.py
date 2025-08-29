@@ -7,3 +7,7 @@ def test_check_button_add_to_basket_is_exist(browser):
 
     add_to_basket_button = browser.find_element(By.CSS_SELECTOR, ".btn-add-to-basket")
     assert add_to_basket_button.is_displayed(), "Button is not displayed"
+
+    # Альтернативный вариант
+    # add_to_basket_button = browser.find_elements(By.CSS_SELECTOR, ".btn-add-to-basket")
+    # assert len(add_to_basket_button) == 1, "Button is not displayed"
